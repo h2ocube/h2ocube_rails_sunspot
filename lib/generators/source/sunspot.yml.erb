@@ -1,0 +1,16 @@
+development:
+  solr:
+    hostname: localhost
+    port: 8982
+test:
+  solr:
+    hostname: localhost
+    port: 8983
+    log_level: OFF
+production:
+  solr:
+    hostname: localhost
+    port: 8983
+    log_level: WARNING
+    pid_path: /root/<%= app_name %>/shared/pids
+    data_path: /root/<%= app_name %>/shared/solr/data
