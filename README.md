@@ -24,6 +24,10 @@ Add sunspot to spec/spec_helper.rb
       Sunspot.commit
     end
 
+Add sunspot to Capfile
+
+    require 'capistrano/sunspot'
+
 ## Contributing
 
 1. Fork it
