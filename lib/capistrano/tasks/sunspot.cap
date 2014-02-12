@@ -14,6 +14,7 @@ namespace :sunspot do
       within shared_path do
         execute :rm, "-rf #{release_path}/solr/solr"
         execute :ln, "-s #{shared_path}/solr #{release_path}/solr"
+        execute :ln, "-s #{shared_path}/pids #{release_path}/solr/pids"
       end
     end
   end
