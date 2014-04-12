@@ -45,6 +45,13 @@ namespace :sunspot do
       end
     end
   end
+
+  desc 'restart solr'
+  task :restart do
+    invoke 'sunspot:stop'
+    sleep 1
+    invoke 'sunspot:start'
+  end
 end
 
 after 'deploy:check', 'sunspot:setup_solr_data_dir'
