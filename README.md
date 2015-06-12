@@ -30,11 +30,11 @@ Add sunspot to Capfile
 
 Sunspot tasks for Capistrano v3:
 
-  cap sunspot:setup_solr_data_dir
-  cap sunspot:link_to_solr_shared_dirs
-  cap sunspot:start
-  cap sunspot:stop
-  cap sunspot:reindex
+    cap sunspot:setup_solr_data_dir
+    cap sunspot:link_to_solr_shared_dirs
+    cap sunspot:start
+    cap sunspot:stop
+    cap sunspot:reindex
 
 ## Contributing
 
